@@ -1,0 +1,252 @@
+/* Activity 12 Specific Styles */
+
+.text-center {
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.soru-goruntusu {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 900px;
+    /* Keep it from getting far too horizontally stretched */
+}
+
+/* Questions Table */
+.questions-table-container {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+    border: 2px solid #5abce7;
+}
+
+.questions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.questions-table tr:nth-child(odd) {
+    background-color: #f4f9ff;
+}
+
+.questions-table tr:nth-child(even) {
+    background-color: white;
+}
+
+.questions-table tr {
+    border-bottom: 2px solid #5abce7;
+}
+
+.questions-table tr:last-child {
+    border-bottom: none;
+}
+
+.question-text {
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    line-height: 1.5;
+    vertical-align: middle;
+    width: 65%;
+}
+
+.question-text strong {
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Answer Cell & Multi-Select Logic */
+.answer-cell {
+    padding: 15px 25px;
+    vertical-align: middle;
+    width: 35%;
+    position: relative;
+    border-left: 2px solid #5abce7;
+}
+
+/* The Box user clicks on */
+.answer-box {
+    min-height: 48px;
+    background-color: #f1f8fc;
+    border: 2px solid transparent;
+    /* Replaces dashed border when focused */
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    /* badges wrap to next line */
+    gap: 8px;
+    align-items: center;
+    align-content: flex-start;
+    transition: all 0.2s ease;
+}
+
+.answer-box:empty::before {
+    content: "Seçiniz...";
+    color: #8bbacf;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.answer-box.active {
+    border-color: #ffca28;
+    /* Highlight Color: Yellowish/Gold */
+    box-shadow: 0 0 10px rgba(255, 202, 40, 0.4);
+    background-color: white;
+}
+
+/* Selection Badges inside the box */
+.selection-badge {
+    background-color: #e2e8f0;
+    color: #334155;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Feedback states for badges */
+.selection-badge.correct {
+    background-color: #00b050;
+    color: white;
+    border-color: #008f40;
+}
+
+.selection-badge.incorrect {
+    background-color: #ff0000;
+    color: white;
+    border-color: #cc0000;
+}
+
+/* Dropdown Options Container (Hidden by default) */
+.multi-select-dropdown {
+    position: absolute;
+    top: calc(100% - 5px);
+    /* Position just below the box */
+    left: 25px;
+    right: 25px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for 12 numbers */
+    gap: 8px;
+}
+
+.multi-select-dropdown.open {
+    display: grid;
+    animation: slideDown 0.2s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles for Individual Checkboxes in Dropdown */
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    user-select: none;
+    border: 1px solid transparent;
+}
+
+.dropdown-option:hover {
+    background-color: #e2f3fc;
+}
+
+.dropdown-option input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #0db0e6;
+}
+
+.dropdown-option label {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #334155;
+    width: 100%;
+}
+
+.check-btn {
+    background: linear-gradient(135deg, #0db0e6, #098cbd);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(13, 176, 230, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.check-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13, 176, 230, 0.4);
+}
+
+.check-btn:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+
+    .question-text,
+    .answer-cell {
+        display: block;
+        width: 100%;
+        border-left: none;
+    }
+
+    .question-text {
+        border-bottom: 1px dashed #e0e0e0;
+        padding-bottom: 10px;
+    }
+
+    .answer-cell {
+        padding-top: 10px;
+    }
+
+    .multi-select-dropdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

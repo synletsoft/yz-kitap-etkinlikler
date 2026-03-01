@@ -1,0 +1,62 @@
+/* Molecule Grid (Recreating the Image) */
+.molecule-grid-container {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.molecule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 100%;
+    background-color: #f0f7fe;
+    /* Light blue background */
+    border: 1px dashed #5abce7;
+}
+
+/* Individual Cell in the Grid */
+.molecule-cell {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px dashed #5abce7;
+    /* Dashed blue borders */
+    gap: 15px;
+}
+
+/* The Blue Number Badge */
+.molecule-number {
+    background-color: #0db0e6;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* The Chemical Formula Text */
+.molecule-formula {
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .molecule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .molecule-grid {
+        grid-template-columns: 1fr;
+    }
+}

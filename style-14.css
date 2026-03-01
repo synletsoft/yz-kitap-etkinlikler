@@ -1,0 +1,146 @@
+/* Activity 14 Specific Styles - Branching Tree */
+
+.tree-container {
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 0;
+}
+
+.tree-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Base style for tree node boxes */
+.tree-node {
+    position: absolute;
+    width: 220px;
+    height: 70px;
+    background-color: #f7fcfd;
+    border: 2px solid #6abce4;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.tree-node p {
+    margin: 0;
+}
+
+.tree-node.active {
+    opacity: 1;
+    border-color: #0db0e6;
+    box-shadow: 0 0 10px rgba(13, 176, 230, 0.3);
+}
+
+.tree-exit {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #6abce4;
+    border-radius: 20px;
+    /* Pill shape */
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.tree-exit.active {
+    opacity: 1;
+    border-color: #0db0e6;
+    box-shadow: 0 0 10px rgba(13, 176, 230, 0.3);
+}
+
+/* Branch Buttons (D/Y) */
+.branch-btn {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #fdfdfd;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #999;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: all 0.2s ease;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.branch-btn.active-btn {
+    opacity: 1;
+    pointer-events: auto;
+    border-color: #aaa;
+    color: #444;
+}
+
+.branch-btn.active-btn:hover {
+    transform: scale(1.1);
+    border-color: #6abce4;
+}
+
+.branch-btn.selected-correct {
+    background-color: #00b050;
+    color: white;
+    border-color: #00b050;
+}
+
+.branch-btn.selected-incorrect {
+    background-color: #ff0000;
+    color: white;
+    border-color: #ff0000;
+}
+
+/* Validated states */
+.node-correct {
+    border-color: #00b050 !important;
+    background-color: #e8f5e9 !important;
+}
+
+.node-incorrect {
+    border-color: #ff0000 !important;
+    background-color: #ffebee !important;
+}
+
+.exit-correct {
+    border-color: #00b050 !important;
+    background-color: #e8f5e9 !important;
+    color: #008f40 !important;
+}
+
+.exit-incorrect {
+    border-color: #ff0000 !important;
+    background-color: #ffebee !important;
+    color: #cc0000 !important;
+}

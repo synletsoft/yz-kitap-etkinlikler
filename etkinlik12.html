@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik 12 - Etkileşimler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-12.css">
+    <link rel="stylesheet" href="style-12-grid.css">
+</head>
+
+<body>
+    <div class="container" style="max-width: 1200px;">
+        <a href="giris.html" class="nav-back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5"></path>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Geri
+        </a>
+        <div class="etkinlik-header-container" style="margin-top: 30px; margin-bottom: 20px;">
+            <div class="etkinlik-header-line left"></div>
+            <div class="etkinlik-header-title">Etkinlik 12</div>
+            <div class="etkinlik-header-line right"></div>
+        </div>
+
+        <p class="instruction-text" style="text-align: left; margin-bottom: 20px;">
+            Aşağıdaki Yapılandırılmış Grid'de numaralandırılmış kutucuklarda bazı moleküller verilmiştir.<br>
+            <strong>Kutucuk numaralarını kullanarak aşağıdaki soruları yanıtlayınız.</strong> (<sub>1</sub>H,
+            <sub>5</sub>B, <sub>6</sub>C, <sub>7</sub>N, <sub>8</sub>O, <sub>9</sub>F, <sub>15</sub>P, <sub>16</sub>S,
+            <sub>17</sub>Cl, <sub>35</sub>Br)
+        </p>
+
+        <!-- Yapılandırılmış Grid (HTML/CSS ile Görselin Birebir Aynısı) -->
+        <div class="molecule-grid-container" style="margin-top: 30px; margin-bottom: 40px;">
+            <div class="molecule-grid">
+                <!-- Row 1 -->
+                <div class="molecule-cell">
+                    <span class="molecule-number">1</span>
+                    <span class="molecule-formula">Cl<sub>2</sub></span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">2</span>
+                    <span class="molecule-formula">NCl<sub>3</sub></span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">3</span>
+                    <span class="molecule-formula">BF<sub>3</sub></span>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="molecule-cell">
+                    <span class="molecule-number">4</span>
+                    <span class="molecule-formula">HBr</span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">5</span>
+                    <span class="molecule-formula">N<sub>2</sub></span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">6</span>
+                    <span class="molecule-formula">CO<sub>2</sub></span>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="molecule-cell">
+                    <span class="molecule-number">7</span>
+                    <span class="molecule-formula">PCl<sub>3</sub></span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">8</span>
+                    <span class="molecule-formula">CCl<sub>4</sub></span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">9</span>
+                    <span class="molecule-formula">H<sub>2</sub>S</span>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="molecule-cell">
+                    <span class="molecule-number">10</span>
+                    <span class="molecule-formula">CH<sub>3</sub>Cl</span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">11</span>
+                    <span class="molecule-formula">OF<sub>2</sub></span>
+                </div>
+                <div class="molecule-cell">
+                    <span class="molecule-number">12</span>
+                    <span class="molecule-formula">O<sub>2</sub></span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Soru Tablosu -->
+        <div class="questions-table-container">
+            <table class="questions-table">
+                <tbody>
+                    <tr data-question="1">
+                        <td class="question-text"><strong>1.</strong> Tabloda verilen moleküllerden hangileri apolar
+                            kovalent bağ içerir?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-1"></div>
+                            <div class="multi-select-dropdown" id="dropdown-1"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="2">
+                        <td class="question-text"><strong>2.</strong> En az üç atom içeren moleküllerden hangilerinde
+                            merkez atom üzerinde ortaklanmamış elektron çifti vardır?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-2"></div>
+                            <div class="multi-select-dropdown" id="dropdown-2"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="3">
+                        <td class="question-text"><strong>3.</strong> Tablodaki moleküllerden hangileri polar kovalent
+                            bağ içerir?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-3"></div>
+                            <div class="multi-select-dropdown" id="dropdown-3"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="4">
+                        <td class="question-text"><strong>4.</strong> Tablodaki moleküllerden hangilerinin dipol momenti
+                            sıfırdır?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-4"></div>
+                            <div class="multi-select-dropdown" id="dropdown-4"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="5">
+                        <td class="question-text"><strong>5.</strong> Tablodaki moleküllerden hangilerinde elektron yük
+                            dağılımı dengeli değildir?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-5"></div>
+                            <div class="multi-select-dropdown" id="dropdown-5"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="6">
+                        <td class="question-text"><strong>6.</strong> Yukarıdaki en az üç atomlu moleküllerden
+                            hangilerinde merkez atom oktetini tamamlamıştır?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-6"></div>
+                            <div class="multi-select-dropdown" id="dropdown-6"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="7">
+                        <td class="question-text"><strong>7.</strong> Tabloda verilen moleküllerden hangilerinde
+                            ortaklanmış valans elektron sayısı en fazladır?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-7"></div>
+                            <div class="multi-select-dropdown" id="dropdown-7"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="8">
+                        <td class="question-text"><strong>8.</strong> Tabloda verilen moleküllerden hangileri polar
+                            kovalent bağ içermesine rağmen apolardır?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-8"></div>
+                            <div class="multi-select-dropdown" id="dropdown-8"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="9">
+                        <td class="question-text"><strong>9.</strong> Tabloda verilen moleküllerden hangilerinde
+                            ortaklanmış ve ortaklanmamış valans elektron sayıları eşittir?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-9"></div>
+                            <div class="multi-select-dropdown" id="dropdown-9"></div>
+                        </td>
+                    </tr>
+                    <tr data-question="10">
+                        <td class="question-text"><strong>10.</strong> Yukarıdaki en az üç atomlu moleküllerden
+                            hangilerinde merkez atom üzerindeki ortaklanmamış elektron çifti sayısı eşittir?</td>
+                        <td class="answer-cell">
+                            <div class="answer-box" id="box-10"></div>
+                            <div class="multi-select-dropdown" id="dropdown-10"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 30px;">
+            <button class="check-btn" id="checkAnswersBtn12">Cevapları Kontrol Et</button>
+        </div>
+
+        <div class="result-message" id="resultMessage12"></div>
+
+    </div>
+
+    <script src="script-12.js"></script>
+</body>
+
+</html>

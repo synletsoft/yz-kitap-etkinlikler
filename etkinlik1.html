@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik 1 - pH Skalası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" style="max-width: 900px;">
+        <a href="giris.html" class="nav-back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5"></path>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Geri
+        </a>
+
+        <div class="etkinlik-header-container">
+            <div class="etkinlik-header-line left"></div>
+            <div class="etkinlik-header-title">Etkinlik 1</div>
+            <div class="etkinlik-header-line right"></div>
+        </div>
+
+        <p class="instruction-text">
+            Sulu çözeltilerin asidik ve bazik özellikleri, farklı pH'larda farklı renkler gösteren pH kâğıtları ile
+            belirlenebilir.
+            pH değeri 7'den küçük olan sulu çözeltiler asidik, pH değeri 7'den büyük olan sulu çözeltiler bazik özellik
+            gösterir.
+            Asidik çözeltilere saf su eklendiğinde pH değeri artar, bazik çözeltilere saf su eklendiğinde pH değeri
+            azalır. Aşağıda günlük hayatta karşılaştığımız bazı maddelerin sulu çözeltilerinin pH değerleri
+            gösterilmiştir.
+        </p>
+
+        <!-- pH Scale Visualization -->
+        <div class="ph-scale-container">
+            <div class="ph-scale-tubes">
+                <!-- 0 -->
+                <div class="ph-item">
+                    <div class="ph-label">Tuz ruhu</div>
+                    <div class="ph-tube ph-0">
+                        <div class="ph-number">0</div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="ph-item">
+                    <div class="ph-label">Kireç çözücü</div>
+                    <div class="ph-tube ph-1">
+                        <div class="ph-number">1</div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="ph-item">
+                    <div class="ph-label">Limon</div>
+                    <div class="ph-tube ph-2">
+                        <div class="ph-number">2</div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="ph-item">
+                    <div class="ph-label">Sirke</div>
+                    <div class="ph-tube ph-3">
+                        <div class="ph-number">3</div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="ph-item">
+                    <div class="ph-label">Limon tuzu</div>
+                    <div class="ph-tube ph-4">
+                        <div class="ph-number">4</div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="ph-item">
+                    <div class="ph-label">Kahve</div>
+                    <div class="ph-tube ph-5">
+                        <div class="ph-number">5</div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="ph-item">
+                    <div class="ph-label">Süt</div>
+                    <div class="ph-tube ph-6">
+                        <div class="ph-number">6</div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="ph-item">
+                    <div class="ph-label">Su</div>
+                    <div class="ph-tube ph-7">
+                        <div class="ph-number">7</div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="ph-item">
+                    <div class="ph-label"></div>
+                    <div class="ph-tube ph-8">
+                        <div class="ph-number">8</div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="ph-item">
+                    <div class="ph-label">Diş macunu</div>
+                    <div class="ph-tube ph-9">
+                        <div class="ph-number">9</div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="ph-item">
+                    <div class="ph-label">Antiasit mide tableti</div>
+                    <div class="ph-tube ph-10">
+                        <div class="ph-number">10</div>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="ph-item">
+                    <div class="ph-label">Karbonat</div>
+                    <div class="ph-tube ph-11">
+                        <div class="ph-number">11</div>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="ph-item">
+                    <div class="ph-label"></div>
+                    <div class="ph-tube ph-12">
+                        <div class="ph-number">12</div>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="ph-item">
+                    <div class="ph-label">Çamaşır suyu</div>
+                    <div class="ph-tube ph-13">
+                        <div class="ph-number">13</div>
+                    </div>
+                </div>
+                <!-- 14 -->
+                <div class="ph-item">
+                    <div class="ph-label">Lavabo açıcı</div>
+                    <div class="ph-tube ph-14">
+                        <div class="ph-number">14</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ph-scale-bottom">
+                <div class="ph-arrow-line-container">
+                    <div class="ph-tick"></div>
+                </div>
+                <div class="ph-arrow-labels">
+                    <span>Asit</span>
+                    <span>Nötr</span>
+                    <span>Baz</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="bold-instruction">Görseldeki pH skalası ve üzerinde pH değerleri belirtilen maddelerle ilgili aşağıda
+            verilen ifadeler doğru ise "✓", yanlış ise "X" ile işaretleyiniz.</p>
+
+        <table class="question-table" id="quizTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="col-dogru">Doğru</th>
+                    <th class="col-yanlis">Yanlış</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-id="a" data-answer="dogru">
+                    <td class="question-text"><b>a.</b> Limon suyu asidik özellik gösterir.</td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+                <tr data-id="b" data-answer="dogru">
+                    <td class="question-text"><b>b.</b> Karbonatın sulu çözeltisine saf su eklenirse pH değeri azalır.
+                    </td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+                <tr data-id="c" data-answer="yanlis">
+                    <td class="question-text"><b>c.</b> Lavabo açıcının sulu çözeltisi mavi turnusol kağıdını kırmızıya
+                        çevirir.</td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+                <tr data-id="ç" data-answer="dogru">
+                    <td class="question-text"><b>ç.</b> Su nötr özellik gösterir.</td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+                <tr data-id="d" data-answer="yanlis">
+                    <td class="question-text"><b>d.</b> Bir bardak suya birkaç damla sirke damlatılırsa oluşan
+                        çözeltinin pH değeri 7'den büyük olur.</td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+                <tr data-id="e" data-answer="yanlis">
+                    <td class="question-text"><b>e.</b> Antiasit mide koruyucunun sulu çözeltisine saf su eklenerek pH
+                        değeri arttırılabilir.</td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+                <tr data-id="f" data-answer="dogru">
+                    <td class="question-text"><b>f.</b> Tuz ruhu ve karbonat karıştırılırsa nötralleşme tepkimesi
+                        gerçekleşir.</td>
+                    <td class="col-dogru">
+                        <div class="checkbox" data-type="dogru"></div>
+                    </td>
+                    <td class="col-yanlis">
+                        <div class="checkbox" data-type="yanlis"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="result-message" id="resultMessage"></div>
+
+        <div class="check-btn-wrapper">
+            <button class="check-btn" id="checkBtn">Cevapları Kontrol Et</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

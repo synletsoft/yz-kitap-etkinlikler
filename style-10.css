@@ -1,0 +1,208 @@
+/* Activity 10 Specific Styles */
+
+.main-title {
+    background-color: #e6f3df;
+    color: #2c3e50;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.two-column-layout {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.text-column {
+    flex: 6;
+}
+
+.matrix-column {
+    flex: 4;
+}
+
+/* Storage Matrix Styling */
+.storage-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.storage-matrix th,
+.storage-matrix td {
+    border: 2px solid #bcecfb;
+    padding: 10px;
+    text-align: center;
+    width: 16%;
+    /* Equal width columns */
+}
+
+.storage-matrix th {
+    background-color: #f8fdff;
+}
+
+.matrix-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.matrix-icon.large {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.icon-ok {
+    color: #00b050;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.icon-no {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.icon-warn {
+    display: inline-block;
+    background-color: #ffc000;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+/* Question 1 Table */
+.question-block {
+    margin-bottom: 40px;
+}
+
+.question-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.q1-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.q1-table th,
+.q1-table td {
+    border: 2px solid #bcecfb;
+    padding: 15px;
+    text-align: center;
+}
+
+.q1-table th {
+    position: relative;
+    padding-top: 25px;
+}
+
+.q1-header-badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #0db0e6;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.q1-row-header {
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #f8fdff;
+    width: 100px;
+}
+
+/* Select inputs for Q1 and Q2 */
+.answer-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.answer-select:focus {
+    border-color: #0db0e6;
+    box-shadow: 0 0 5px rgba(13, 176, 230, 0.3);
+}
+
+.inline-select {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    font-size: 1rem;
+    color: #333;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.inline-select:focus {
+    border-color: #0db0e6;
+    background-color: white;
+}
+
+/* Question 2 List */
+.fill-blank-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.q-letter {
+    font-weight: bold;
+    margin-right: 15px;
+    min-width: 20px;
+}
+
+/* Feedback Styling for inputs */
+.correct-input {
+    border: 2px solid #00b050 !important;
+    background-color: #eaffea !important;
+}
+
+.incorrect-input {
+    border: 2px solid #ff0000 !important;
+    background-color: #ffeaea !important;
+    animation: shake 0.4s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .two-column-layout {
+        flex-direction: column;
+    }
+
+    .q1-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
