@@ -83,23 +83,26 @@ body {
     position: relative;
 }
 
-.etkinlik-header-line::before,
-.etkinlik-header-line::after {
+.etkinlik-header-line.left::before {
     content: '';
     position: absolute;
     top: -4px;
+    left: 0;
     width: 10px;
     height: 10px;
     background-color: #ffe19c;
     border-radius: 50%;
 }
 
-.etkinlik-header-line.left::before {
-    left: 0;
-}
-
 .etkinlik-header-line.right::after {
+    content: '';
+    position: absolute;
+    top: -4px;
     right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffe19c;
+    border-radius: 50%;
 }
 
 .etkinlik-header-title {

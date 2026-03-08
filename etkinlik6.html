@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-6.css">
+</head>
+
+<body>
+    <div class="container" style="max-width: 1000px;">
+        <a href="index.html" class="nav-back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5"></path>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Geri
+        </a>
+
+        <div class="etkinlik-header-container">
+            <div class="etkinlik-header-line left"></div>
+            <div class="etkinlik-header-title">Etkinlik 6</div>
+            <div class="etkinlik-header-line right"></div>
+        </div>
+
+        <!-- Disiplinler Tablosu (3 Sütun) -->
+        <div class="disciplines-grid">
+            <!-- Sol Sütun -->
+            <div class="discipline-col">
+                <div class="discipline-row">
+                    <div class="discipline-name">Biyokimya</div>
+                    <div class="select-container">
+                        <select class="discipline-select" data-discipline="Biyokimya">
+                            <option value="">...</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="ç">ç</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="discipline-row">
+                    <div class="discipline-name">Organik Kimya</div>
+                    <div class="select-container">
+                        <select class="discipline-select" data-discipline="Organik Kimya">
+                            <option value="">...</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="ç">ç</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orta Sütun -->
+            <div class="discipline-col">
+                <div class="discipline-row">
+                    <div class="discipline-name">Analitik Kimya</div>
+                    <div class="select-container">
+                        <select class="discipline-select" data-discipline="Analitik Kimya">
+                            <option value="">...</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="ç">ç</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="discipline-row">
+                    <div class="discipline-name">Polimer Kimyası</div>
+                    <div class="select-container">
+                        <select class="discipline-select" data-discipline="Polimer Kimyası">
+                            <option value="">...</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="ç">ç</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ Sütun -->
+            <div class="discipline-col">
+                <div class="discipline-row">
+                    <div class="discipline-name">Fizikokimya</div>
+                    <div class="select-container">
+                        <select class="discipline-select" data-discipline="Fizikokimya">
+                            <option value="">...</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="ç">ç</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="discipline-row">
+                    <div class="discipline-name">Anorganik Kimya</div>
+                    <div class="select-container">
+                        <select class="discipline-select" data-discipline="Anorganik Kimya">
+                            <option value="">...</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="ç">ç</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cümleler / Sorular -->
+        <p class="instruction-text bold-instruction">Aşağıdaki cümleleri verilen kimya disiplinlerini kullanarak
+            doldurunuz.</p>
+
+        <div class="sentences-container">
+            <!-- A -->
+            <div class="sentence-item">
+                <div class="sentence-letter">a.</div>
+                <div class="sentence-content">
+                    Gazların balonlardaki davranışlarını inceleyen kimya disiplini
+                    <input type="text" class="blank-input" data-letter="a" autocomplete="off">
+                    dır.
+                </div>
+            </div>
+
+            <!-- B -->
+            <div class="sentence-item">
+                <div class="sentence-letter">b.</div>
+                <div class="sentence-content">
+                    <input type="text" class="blank-input" data-letter="b" autocomplete="off">
+                    disiplini asitler, bazlar, tuzlar, metaller, ametaller, yarı metaller, mineraller gibi çeşitli
+                    maddelerin karakteristik
+                    özelliklerini inceler.
+                </div>
+            </div>
+
+            <!-- C -->
+            <div class="sentence-item">
+                <div class="sentence-letter">c.</div>
+                <div class="sentence-content">
+                    Karbon kimyası olarak da bilinen kimya disiplini
+                    <input type="text" class="blank-input" data-letter="c" autocomplete="off">
+                    dır.
+                </div>
+            </div>
+
+            <!-- Ç -->
+            <div class="sentence-item">
+                <div class="sentence-letter">ç.</div>
+                <div class="sentence-content">
+                    Suların pH değerlerinin ve sertlik derecelerinin tayini
+                    <input type="text" class="blank-input" data-letter="ç" autocomplete="off">
+                    disiplininin araştırma alanına girer.
+                </div>
+            </div>
+
+            <!-- D -->
+            <div class="sentence-item">
+                <div class="sentence-letter">d.</div>
+                <div class="sentence-content">
+                    <input type="text" class="blank-input" data-letter="d" autocomplete="off">
+                    disiplininin uygulama alanlarından bazıları karbonhidratlar, proteinler, lipitler, nükleik asitler,
+                    vitaminler ve hormonlar gibi moleküllerin incelenmesidir.
+                </div>
+            </div>
+
+            <!-- E -->
+            <div class="sentence-item">
+                <div class="sentence-letter">e.</div>
+                <div class="sentence-content">
+                    <input type="text" class="blank-input" data-letter="e" autocomplete="off">
+                    ; plastikler, kauçuklar, fiberler, yapıştırıcılar, jelatinler ve biyopolimerler gibi malzemeleri
+                    inceler.
+                </div>
+            </div>
+        </div>
+
+        <div class="result-message" id="resultMessage6"></div>
+
+        <div class="check-btn-wrapper" style="margin-top: 40px;">
+            <button class="check-btn" id="checkBtn6">Kontrol Et</button>
+        </div>
+    </div>
+
+    <script src="script-6.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik 9 - Eşleştirme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-9.css">
+</head>
+
+<body>
+    <div class="container" style="max-width: 1000px;">
+        <a href="index.html" class="nav-back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5"></path>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Geri
+        </a>
+
+        <div class="etkinlik-header-container">
+            <div class="etkinlik-header-line left"></div>
+            <div class="etkinlik-header-title">Etkinlik 9</div>
+            <div class="etkinlik-header-line right"></div>
+        </div>
+
+        <div class="columns-container">
+            <!-- A (Durum) Sütunu -->
+            <div class="column-box">
+                <div class="column-header">A (Durum)</div>
+                <div class="item-list">
+                    <div class="item-row">
+                        <div class="item-number">1</div>
+                        <div class="item-text">Yanıcı ve uçucu maddeler</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-number">2</div>
+                        <div class="item-text">Zehirli gaz oluşturan maddeler</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-number">3</div>
+                        <div class="item-text">Kimyasal madde şişeleri</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-number">4</div>
+                        <div class="item-text">Asitlerin deriyle teması</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-number">5</div>
+                        <div class="item-text">Kimyasal yanıklar</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B (Doğru Uygulama) Sütunu -->
+            <div class="column-box draggable-container">
+                <div class="column-header">B (Doğru Uygulama)</div>
+                <div class="item-list">
+                    <div class="item-row">
+                        <div class="draggable-item" draggable="true" data-id="a">a</div>
+                        <div class="item-text">Çeker ocakta çalışılmalıdır.</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="draggable-item" draggable="true" data-id="b">b</div>
+                        <div class="item-text">Güneş ışığından uzak tutulmalıdır.</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="draggable-item" draggable="true" data-id="c">c</div>
+                        <div class="item-text">Alevden uzak tutulmalıdır.</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="draggable-item" draggable="true" data-id="ç">ç</div>
+                        <div class="item-text">Zayıf baz çözeltisi ile müdahale edilmelidir.</div>
+                    </div>
+                    <div class="item-row">
+                        <div class="draggable-item" draggable="true" data-id="d">d</div>
+                        <div class="item-text">Önce bol suyla yıkanmalı, sonra soğuk su uygulanmalıdır.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="instruction-text" style="font-weight: bold; margin-top: 30px; margin-bottom: 20px;">
+            Yukarıda verilen durumları, yapılması gereken doğru uygulamayla eşleştiriniz.
+        </p>
+
+        <div class="drop-zones-container">
+            <div class="drop-zone-wrapper">
+                <div class="drop-zone-header">1</div>
+                <div class="drop-zone" data-target="1"></div>
+            </div>
+            <div class="drop-zone-wrapper">
+                <div class="drop-zone-header">2</div>
+                <div class="drop-zone" data-target="2"></div>
+            </div>
+            <div class="drop-zone-wrapper">
+                <div class="drop-zone-header">3</div>
+                <div class="drop-zone" data-target="3"></div>
+            </div>
+            <div class="drop-zone-wrapper">
+                <div class="drop-zone-header">4</div>
+                <div class="drop-zone" data-target="4"></div>
+            </div>
+            <div class="drop-zone-wrapper">
+                <div class="drop-zone-header">5</div>
+                <div class="drop-zone" data-target="5"></div>
+            </div>
+        </div>
+
+        <div class="result-message" id="resultMessage9"></div>
+
+        <div class="check-btn-wrapper" style="margin-top: 40px;">
+            <button class="check-btn" id="checkBtn9">Kontrol Et</button>
+        </div>
+    </div>
+
+    <script src="script-9.js"></script>
+</body>
+
+</html>
